@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://github.com/loozerPO/.github.io/blob/main/stas.css" />
+    <title>Document</title>
+
+<body>
+    <script src="stas1.js"></script>   
+    <style>
+        li {
+         list-style-type: none; /* Убираем маркеры */
+        }
+        </style>  
+    <div class="fill"></div>
+    <div class="container">
+    <form action="#" class="form form1">
+        <div class="form_item">
+                <div class="creditor">
+                     <div class="creditor1">
+                     <h2 class="heading">Банк кредитор</h2>
+                     <select class="BankCred">
+                     <option value="1">Сбербанк</option>
+                     <option value="2">ВТБ</option>  
+                     <option value="3">Россельхозбанк</option>
+                     </select>
+                     </div>
+                     <div class="creditor1">  
+                        <h2 class="heading">Имущество</h2>
+                        <select class="TipIM">
+                            <option value="1">Квартира</option>
+                            <option value="2">Дом</option>  
+                            <option value="3">Аппартаменты</option>
+                        </select>
+                     </div>
+                     <div class="creditor1">  
+                        <h2 class="heading">Пол</h2>
+                         <select class="Pol">
+                         <option value="1">Мужской</option>
+                         <option value="2">Женский</option>  
+                         </select>
+                     </div>
+                     <div class="StahovaSumma">
+                     <h2 class="heading">Страховая сумма</h2>
+                     <input class="StahovaSumma1" type="number" step="1" placeholder="введите задолженность" name="Summa1" id="SS">
+                     </div>
+                     <div class="Stavka">
+                     <h2 class="heading">Процентная ставка по кредиту</h2>
+                     <input class="Stavka1" type="number" step="0.01" placeholder="% по кредиту" name="prkredit" id="Proc" >
+                     </div>
+                     <div class="Vozrast">
+                     <h2 class="heading">Количество лет</h2>
+                     <input class="Vozrast1" type="number" step="1" placeholder="укажите свой возраст" name="Vozrast1" id="VR"  >
+                    </div>
+                </div>
+                <div class="RISK">
+                  <h2 class="heading">Какой тип полиса вам нужен?</h2>
+                  <div class="option_item">
+                  <input type="checkbox" name="Risk1"  id="RiskL" class="option" onchange="HIDE (RiskL)">
+                  <label for="RiskL" class="checkmark"></label>
+                  <label for="RiskL">Страхование жизни и здоровья заемщика</label>
+                  </div>
+                  <div class="option_item">
+                  <input type="checkbox" name="Risk2"  id="RiskM" class="option"  onchange="HIDE2 (RiskM)">
+                  <label for="RiskM" class="checkmark"></label>
+                  <label for="RiskM">Страхование имущества (несущие конструкции)</label>
+                  </div>
+                  <div class="option_item">
+                  <input type="checkbox" name="Risk3"  id="RiskT" class="option"  onchange="HIDE3 (RiskT)">
+                  <label for="RiskT" class="checkmark"></label>
+                  <label for="RiskT">Страхование Титула</label>
+                  </div>
+                </div>
+            </div>
+            <div class="RASCHET" >
+                <a href="" class="gradient-button">Рассчитать</a>
+                <label class="checkbox-btn">
+                <input type = "checkbox" id = "bloggood" class="chek" onchange="showOrHide(bloggood)">
+                <span>Расчет</span>
+                </label>
+            </div>
+    </form>
+    <form action="#" class="form2" name="form2" id="form2" style="display: none;"> 
+        <div class="flex" style="display: none;" id="blokL">
+            <h2 class="heading">Премия по страхованию жизни</h2>
+            <div class="totalL" id="total">0</div>
+        </div>
+        <div class="flex1" style="display: none;" id="blokIM">
+            <h2 class="heading">Премия по страхованию имущества</h2>
+            <div class="totalL" id="totalI">0</div>
+        </div>
+        <div class="flex2" style="display: none;" id="blokTIT">
+            <h2 class="heading">Премия по страхованию Титула</h2>
+            <div class="totalL" id="totalT">0</div>
+        </div>    
+    </form>
+</div>
+<script src="http://xn--80ajijsfw.fun/gallery/RR.js"></script> 
+
+</body>
+
+</html>
