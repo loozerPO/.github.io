@@ -1,0 +1,570 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+*::marker {
+display: none; 
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  width: 100%;
+  min-height: 100vh;
+  color: #fff;
+  position: relative;
+  background-image: url(./И3.jpg);
+  background-size: cover;
+  box-sizing: border-box;
+  
+}
+
+.fill {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #1879ca;
+  opacity: 0.66;
+  
+}
+.container {
+    max-width:max-content;
+    max-height: max-content;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+
+}
+.form {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 30px;
+  color:blue;
+  display: inline-block;
+  text-align: center;
+}
+.form2 {
+  margin: 15px 0px 15px;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 30px;
+  color:blue;
+  text-align: center;
+  
+}
+
+.heading {
+  font-size: 15px;
+  margin: 5px;
+  
+}
+
+ .creditor1 {
+    margin: 10px;
+    display: inline-block;
+ }
+
+/*для кредитора*/
+    .BankCred {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 10px; /* demo only */
+      }
+      
+      .BankCred {
+        background-color: #1abc9c;
+        color:#ffffff;
+        font-size: inherit;
+        padding: .5em;
+        padding-right: 2.5em;	
+        border: 0;
+        margin: 0;
+        border-radius: 3px;
+        text-indent: 0.01px;
+        text-overflow: '';
+        -webkit-appearance: button; /* hide default arrow in chrome OSX */
+        -moz-appearance: none; /* отключает стрелку*/
+        -webkit-appearance: none; /* отключает стрелку*/
+        appearance: none; /* отключает стрелку*/
+
+      }
+      
+      .BankCred::before,
+      .BankCred::after {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+      }
+      
+      .BankCred::after { /*  Custom dropdown arrow */
+        content: "\25BC";
+        height: 1em;
+        font-size: .625em;
+        line-height: 1;
+        right: 1.2em;
+        top: 50%;
+        margin-top: -.5em;
+      }
+      
+      .BankCred::before { /*  Custom dropdown arrow cover */
+        width: 2em;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border-radius: 0 3px 3px 0;
+      }
+      
+      .BankCred select[disabled] {
+        color: rgba(0,0,0,.3);
+       
+      }
+      
+      .BankCred select[disabled]::after {
+        color: rgba(0,0,0,.1);
+      }
+      
+      .BankCred::before {
+        background-color: rgba(0,0,0,.15);
+      }
+      
+      .BankCred::after {
+        color: rgba(0,0,0,.4);
+      }
+      
+
+      /*кредитор закончен*/
+
+      /*для имущества*/
+    .TipIM {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 10px; /* demo only */
+      }
+      
+      .TipIM {
+        background-color: #1abc9c;
+        color:#ffffff;
+        font-size: inherit;
+        padding: .5em;
+        padding-right: 2.5em;	
+        border: 0;
+        margin: 0;
+        border-radius: 3px;
+        text-indent: 0.01px;
+        text-overflow: '';
+        -webkit-appearance: button; /* hide default arrow in chrome OSX */
+        -moz-appearance: none; /* отключает стрелку*/
+        -webkit-appearance: none; /* отключает стрелку*/
+        appearance: none; /* отключает стрелку*/
+
+      }
+      
+      .TipIM::before,
+      .TipIM::after {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+      }
+      
+      .TipIM::after { /*  Custom dropdown arrow */
+        content: "\25BC";
+        height: 1em;
+        font-size: .625em;
+        line-height: 1;
+        right: 1.2em;
+        top: 50%;
+        margin-top: -.5em;
+      }
+      
+      .TipIM::before { /*  Custom dropdown arrow cover */
+        width: 2em;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border-radius: 0 3px 3px 0;
+      }
+      
+      .TipIM select[disabled] {
+        color: rgba(0,0,0,.3);
+       
+      }
+      
+      .TipIM select[disabled]::after {
+        color: rgba(0,0,0,.1);
+      }
+      
+      .TipIM::before {
+        background-color: rgba(0,0,0,.15);
+      }
+
+      .TipIM::after {
+        color: rgba(0,0,0,.4);
+      }
+      .Vidimu {
+        position: absolute;
+        /* смещение относительно родительского элемента 10px вверх от верхнего края и   10px влево */
+        top: -10px;
+        left: 10px;
+        background: #750909;
+        padding: 0 5px;
+      }
+
+      /*имущество закончено*/
+
+/*страховая сумма*/
+      .StahovaSumma .StahovaSumma1 {
+        padding: 10px;
+        border-radius: 10px;
+        border:#27030360;
+        color: #ffffff;
+        width: 200px;
+        box-shadow: inset;
+        background-color: #1abc9c;
+      }
+      .creditor .StahovaSumma .heading {
+        color: #750909;
+        text-align: center;
+     }
+     .StahovaSumma {
+        margin: 10px;
+        display: inline-block;
+     }
+     .StahovaSumma .StahovaSumma1:focus {
+        padding: 10px;
+        border-radius: 10px; 
+        border:#ff000025;
+        color: #ffffff;
+        width: 200px;
+        box-shadow: inset;
+        background-color: #05fdcc;
+        outline: none;
+     }
+     .StahovaSumma .StahovaSumma1::-webkit-outer-spin-button,
+     .StahovaSumma .StahovaSumma1::-webkit-inner-spin-button {
+     -webkit-appearance: none;
+  }
+  /*страховая сумма конец*/
+
+  /*ставка по кредиту*/
+  .Stavka .Stavka1 {
+    padding: 10px;
+    border-radius: 10px;
+    border:#27030360;
+    color: #ffffff;
+    width: 230px;
+    box-shadow: inset;
+    background-color: #1abc9c;
+  }
+  .creditor .Stavka .heading {
+    color: #750909;
+    text-align: center;
+    width: 230px;
+ }
+ .Stavka {
+    margin: 10px;
+    text-align:center;
+    display: inline-block;
+ }
+ .Stavka .Stavka1:focus {
+    padding: 10px;
+    border-radius: 10px; 
+    border:#ff000025;
+    color: #000000;
+    width: 230px;
+    box-shadow: inset;
+    background-color: #05fdcc;
+    outline: none;
+ }
+    .Stavka .Stavka1::-webkit-outer-spin-button,
+    .Stavka .Stavka1::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+ }
+/*ставка по кредиту конец*/
+/*возраст*/
+.Vozrast .Vozrast1 {
+  padding: 10px;
+  border-radius: 10px;
+  border:#27030360;
+  color: #ffffff;
+  width: 150px;
+  box-shadow: inset;
+  background-color: #1abc9c;
+}
+.creditor .Vozrast .heading {
+  color: #750909;
+  text-align: center;
+  width: 150px;
+}
+.Vozrast {
+  margin: 0px;
+  text-align:center;
+  display: inline-block;
+}
+.Vozrast .Vozrast1:focus {
+  padding: 10px;
+  border-radius: 10px; 
+  border:#ff000025;
+  color: #000000;
+  width: 150px;
+  box-shadow: inset;
+  background-color: #05fdcc;
+  outline: none;
+}
+  .Vozrast .Vozrast1::-webkit-outer-spin-button,
+  .Vozrast .Vozrast1::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+/*возраст конец*/
+
+
+/*риски*/
+.RISK .heading {
+  color: #750909;
+  text-align: center;
+}
+.option_item {
+  margin: 10px;
+  display:inline-flex;
+  align-items: center;
+}
+
+.option_item .checkmark {
+display:block;
+width: 19px;
+height: 19px;
+background-color: #1abc9c;
+margin-right: 15px;
+cursor: pointer;
+position: relative;
+}
+
+.option {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.option_item .checkmark::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.option_item input:checked + .checkmark::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #084ac5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*риски конец*/
+
+/*расчет*/
+.RASCHET {
+  display: inline-block;
+}
+.gradient-button {
+  text-decoration: none;
+  display:none;
+  color: white;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #38cfb6 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+  position:absolute;
+}
+.gradient-button:hover {
+  background-position: right center;
+  position: absolute;
+}
+
+.checkbox-btn {
+  text-decoration: none;
+  display:inline-block;
+  color: white;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #38cfb6 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+	user-select: none;
+	position: relative;
+}
+.checkbox-btn input[type=checkbox] {
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+.checkbox-btn span {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 10px;
+	line-height: 30px;
+	border: none;
+	border-radius: 4px;
+	transition: background 0.2s ease;
+}
+ 
+
+/* Checked */
+.checkbox-btn input[type=checkbox]:checked + span {
+	background: #ffe0a600;
+}
+ 
+/* Focus */
+.focused span {
+	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+ 
+/* Hover */
+.checkbox-btn:hover {
+	background-position: right center;
+}
+ 
+/* Active */
+.checkbox-btn input[type=checkbox]:active:not(:disabled) + span {
+	background: #d2c5ac;
+	color: #000;
+}
+ 
+/* Disabled */
+.checkbox-btn input[type=checkbox]:disabled + span {
+	background: #efefef;
+	color: #666;
+	cursor: default;
+}
+.checkbox-btn input[type=checkbox]:checked:disabled + span {
+	background: #f7efdc;
+}
+
+.totalL {
+font-size: 50px;
+FONT-WEIGHT:100;
+}
+
+
+/*для возраста*/
+  .Pol {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 10px; /* demo only */
+    }
+    
+    .Pol{
+      background-color: #1abc9c;
+      color:#ffffff;
+      font-size: inherit;
+      padding: .5em;
+      padding-right: 2.5em;	
+      border: 0;
+      margin: 0;
+      border-radius: 3px;
+      text-indent: 0.01px;
+      text-overflow: '';
+      -webkit-appearance: button; /* hide default arrow in chrome OSX */
+      -moz-appearance: none; /* отключает стрелку*/
+      -webkit-appearance: none; /* отключает стрелку*/
+      appearance: none; /* отключает стрелку*/
+
+    }
+    
+    .Pol::before,
+    .Pol::after {
+      content: "";
+      position: absolute;
+      pointer-events: none;
+    }
+    
+    .Pol::after { /*  Custom dropdown arrow */
+      content: "\25BC";
+      height: 1em;
+      font-size: .625em;
+      line-height: 1;
+      right: 1.2em;
+      top: 50%;
+      margin-top: -.5em;
+    }
+    
+    .Pol::before { /*  Custom dropdown arrow cover */
+      width: 2em;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border-radius: 0 3px 3px 0;
+    }
+    
+    .Pol select[disabled] {
+      color: rgba(0,0,0,.3);
+     
+    }
+    
+    .Pol select[disabled]::after {
+      color: rgba(0,0,0,.1);
+    }
+    
+    .Pol::before {
+      background-color: rgba(0,0,0,.15);
+    }
+    
+    .Pol::after {
+      color: rgba(0,0,0,.4);
+    }
+
+
+    .flex {
+      display: inline-block;
+      margin-left: 40px;
+    }
+    .flex1 {
+      display: inline-block;
+      margin-left: 40px;
+    }
+    .flex2 {
+      display: inline-block;
+      margin-left: 40px;
+    }
+
+    .totalL {
+      text-align: center;
+    }
